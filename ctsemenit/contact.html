@@ -1,0 +1,213 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Catatan Semenit- Contact
+    </title>
+    <script src="https://cdn.tailwindcss.com">
+    </script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&amp;family=Roboto:wght@400;700&amp;display=swap"
+        rel="stylesheet" />
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: whitesmoke;
+            /* Gradasi lembut latar belakang */
+        }
+
+        .title {
+            font-family: 'Playfair Display', serif;
+            color: #0D1F2D;
+        }
+
+        .button {
+            background-color: #3498DB;
+            /* Biru yang profesional */
+            color: #fff;
+            padding: 12px 30px;
+            border-radius: 50px;
+            text-transform: uppercase;
+            font-weight: 600;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.2s;
+        }
+
+        /* Efek saat hover */
+        .button:hover {
+            background-color: #2980B9;
+            transform: scale(1.05);
+        }
+
+        /* Efek saat tombol diklik */
+        .button:active {
+            transform: scale(0.95);
+            /* Efek mengecil saat tombol ditekan */
+        }
+
+        .footer-icons i {
+            transition: color 0.3s;
+        }
+
+        .footer-icons i:hover {
+            color: #2980B9;
+        }
+
+        .navbar {
+            background: linear-gradient(to right, #2C3E50, #34495E);
+            /* Gradasi biru gelap dan abu-abu */
+            color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Efek tombol navbar */
+        .navbar-button {
+            transition: transform 0.2s, box-shadow 0.3s;
+        }
+
+        .navbar-button:active {
+            transform: scale(0.95);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Efek saat hover pada menu navbar */
+        .navbar-link:hover {
+            background-color: #2980B9;
+            color: white;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-100">
+    <header class="bg-white py-4 shadow-md">
+        <div class="container mx-auto flex justify-between items-center px-6">
+            <div class="flex items-center space-x-6">
+                <a href="index.html">
+                    <img alt="Logo" class="h-12" src="logo.png" />
+                </a>
+                <a href="https://www.instagram.com/catatansemenit" class="text-black text-xl hover:text-gray-700">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://www.tiktok.com/@catatan.semenit?_t=8rR3iZytGRU&_r=1" class="text-black text-xl hover:text-gray-700">
+                    <i class="fab fa-tiktok"></i>
+                </a>
+                <a href="x.html" class="text-black text-xl hover:text-gray-700">
+                    <i class="fab fa-twitter"></i>
+                </a>
+            </div>
+            <div class="relative">
+                <button class="text-black text-xl focus:outline-none navbar-button" id="dropdownButton">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="absolute right-0 mt-2 w-48 bg-white border border-gray-200 rounded shadow-lg hidden"
+                    id="dropdown">
+                    <a class="block px-4 py-2 text-gray-800 navbar-link" href="home.html"><i
+                            class="fas fa-home mr-2"></i>Home</a>
+                    <a class="block px-4 py-2 text-gray-800 navbar-link" href="about.html"><i
+                            class="fas fa-info-circle mr-2"></i>About</a>
+                    <a class="block px-4 py-2 text-gray-800 navbar-link" href="cervices.html"><i
+                            class="fas fa-cogs mr-2"></i>Services</a>
+                    <a class="block px-4 py-2 text-gray-800 navbar-link" href="contact.html"><i
+                            class="fas fa-envelope mr-2"></i>Contact</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="container mx-auto py-8 px-4">
+        <div class="text-center md:text-left" style="text-align: justify;">
+            <h1 class="text-4xl font-bold title mt-2">
+                Hubungi Kami
+            </h1>
+            <p class="text-lg text-gray-700 mt-4">
+                Kami senang mendengar dari Anda! Apakah Anda memiliki pertanyaan tentang layanan kami, membutuhkan
+                bantuan, atau hanya ingin memberikan umpan balik, jangan ragu untuk menghubungi kami.
+            </p>
+            <form action="https://formspree.io/f/mwpkbgvz" method="POST" class="mt-8">
+                <div class="mb-4">
+                    <label class="block text-gray-700 text-sm font-bold mb-2" for="name">
+                        Nama
+                    </label>
+                    <input
+                        class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                        id="name" name="name" placeholder="Nama Anda" type="text" />
+                </div>
+                <div class="mb-4">
+                    <label class="block text-gray-700 text-sm font-bold mb-2" for="email">
+                        Email
+                    </label>
+                    <input
+                        class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                        id="email" name="email" placeholder="Email Anda" type="email" />
+                </div>
+                <div class="mb-4">
+                    <label class="block text-gray-700 text-sm font-bold mb-2" for="message">
+                        Pesan
+                    </label>
+                    <textarea
+                        class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                        id="message" name="message" placeholder="Pesan Anda" rows="5"></textarea>
+                </div>
+                <div class="flex items-center justify-between">
+                    <button
+                        class="bg-black text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+                        type="submit">
+                        Kirim
+                    </button>
+                </div>
+            </form>
+
+        </div>
+    </main>
+    <footer class="bg-white py-8">
+        <div class="container mx-auto text-center">
+            <div class="flex justify-center space-x-4 mb-4">
+                <a href="https://www.instagram.com/catatansemenit/profilecard/?igsh=aGh6MTRlNzV2aXdh">
+                    <i class="fab fa-instagram text-black text-xl">
+                    </i>
+                </a>
+                <a href="https://www.tiktok.com/@catatan.semenit?_t=8rR3iZytGRU&_r=1">
+                    <i class="fab fa-tiktok text-black text-xl">
+                    </i>
+                </a>
+                <a href="x.html">
+                    <i class="fab fa-twitter text-black text-xl">
+                    </i>
+                </a>
+            </div>
+            <p class="text-gray-700">
+                &copy; 2024 Catatan Semenit.
+            </p>
+        </div>
+    </footer>
+    <script>
+        document.getElementById('dropdownButton').addEventListener('click', function () {
+            var dropdown = document.getElementById('dropdown');
+            if (dropdown.classList.contains('hidden')) {
+                dropdown.classList.remove('hidden');
+                dropdown.classList.add('dropdown-enter');
+                setTimeout(function () {
+                    dropdown.classList.remove('dropdown-enter');
+                    dropdown.classList.add('dropdown-enter-active');
+                }, 10);
+            } else {
+                dropdown.classList.add('dropdown-leave');
+                setTimeout(function () {
+                    dropdown.classList.remove('dropdown-leave');
+                    dropdown.classList.add('dropdown-leave-active');
+                    setTimeout(function () {
+                        dropdown.classList.remove('dropdown-leave-active');
+                        dropdown.classList.add('hidden');
+                    }, 300);
+                }, 10);
+            }
+        });
+    </script>
+</body>
+
+</html>
